@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>unidades</class>
+ <widget class="QDialog" name="unidades">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>368</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema de Unidades</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="iconos.qrc">
+    <normaloff>:/new/prefix1/iconos/si.jpg</normaloff>:/new/prefix1/iconos/si.jpg</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QStackedWidget" name="base">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>Sistema Internacional</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QGroupBox" name="groupBox_2">
+                <property name="title">
+                 <string>Temperatura</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="verticalLayout">
+                   <item>
+                    <widget class="QRadioButton" name="celsius">
+                     <property name="text">
+                      <string>Celsius</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="kelvin">
+                     <property name="text">
+                      <string>Kelvin</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_3">
+                <property name="title">
+                 <string>Presion</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_6">
+                 <item row="0" column="0">
+                  <layout class="QGridLayout" name="gridLayout_5">
+                   <item row="0" column="0">
+                    <widget class="QRadioButton" name="bar">
+                     <property name="text">
+                      <string>bar</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QRadioButton" name="pa">
+                     <property name="text">
+                      <string>Pa</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QRadioButton" name="kPa">
+                     <property name="text">
+                      <string>kPa</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QRadioButton" name="MPa">
+                     <property name="text">
+                      <string>MPa</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QGroupBox" name="groupBox_5">
+                <property name="title">
+                 <string>Energia</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_8">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="verticalLayout_4">
+                   <item>
+                    <widget class="QRadioButton" name="J">
+                     <property name="text">
+                      <string>J</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="kJ">
+                     <property name="text">
+                      <string>kJ</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_4">
+                <property name="title">
+                 <string>Propiedades Especificas </string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_7">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <item>
+                    <widget class="QRadioButton" name="kg">
+                     <property name="text">
+                      <string>Masa - kg</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="mol">
+                     <property name="text">
+                      <string>Molar - mol</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QGridLayout" name="gridLayout_10">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="title">
+          <string>Sistema Ingles</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_15">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QGroupBox" name="groupBox_7">
+                <property name="title">
+                 <string>Temperatura</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_11">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="verticalLayout_6">
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QRadioButton" name="radioButton">
+                     <property name="text">
+                      <string>Fahrenheit</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QRadioButton" name="radioButton_2">
+                     <property name="text">
+                      <string>Rankine</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_8">
+                <property name="title">
+                 <string>Presion</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_12">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="verticalLayout_7">
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QRadioButton" name="radioButton_5">
+                     <property name="text">
+                      <string>psia</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QRadioButton" name="radioButton_6">
+                     <property name="text">
+                      <string>atm</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QGroupBox" name="groupBox_9">
+                <property name="title">
+                 <string>Propiedades Especificas</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_14">
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="verticalLayout_8">
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QRadioButton" name="radioButton_7">
+                     <property name="text">
+                      <string>Masa - lbm</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QRadioButton" name="radioButton_8">
+                     <property name="text">
+                      <string>Molar - lbmol</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_10">
+                <property name="title">
+                 <string>GroupBox</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_13">
+                 <item row="0" column="0" alignment="Qt::AlignHCenter">
+                  <widget class="QRadioButton" name="radioButton_9">
+                   <property name="text">
+                    <string>Btu</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="iconos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>iconos/abrir-documento.png</file>
+        <file>iconos/boton-cerrar.png</file>
+        <file>iconos/configuraciones.png</file>
+        <file>iconos/fuego.png</file>
+        <file>iconos/fx.png</file>
+        <file>iconos/guardar-el-archivo.png</file>
+        <file>iconos/historial.png</file>
+        <file>iconos/impresora.png</file>
+        <file>iconos/matematicas.png</file>
+        <file>iconos/nuevo-mensaje.png</file>
+        <file>iconos/probabilidad.png</file>
+        <file>iconos/rename.png</file>
+        <file>iconos/resolver.png</file>
+        <file>iconos/run.png</file>
+        <file>iconos/ruta.png</file>
+        <file>iconos/si.jpg</file>
+        <file>iconos/fluido.png</file>
+        <file>iconos/proyecto.png</file>
+        <file>iconos/tabla.png</file>
+        <file>iconos/home.png</file>
+    </qresource>
+</RCC>

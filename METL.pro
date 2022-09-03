@@ -10,13 +10,19 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    nuevo.cpp \
+    unidades.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    nuevo.h \
+    unidades.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    nuevo.ui \
+    unidades.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -25,3 +31,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     .gitignore
+
+RESOURCES += \
+    iconos.qrc

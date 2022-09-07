@@ -20,5 +20,6 @@
         <file>iconos/proyecto.png</file>
         <file>iconos/tabla.png</file>
         <file>iconos/home.png</file>
+        <file>iconos/tabla-periodica.png</file>
     </qresource>
 </RCC>

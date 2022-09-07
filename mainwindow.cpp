@@ -4,6 +4,7 @@
 #include<QDir>
 #include"nuevo.h"
 #include"unidades.h"
+#include"elemento.h"
 
 MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow){
     ui->setupUi(this);
@@ -13,7 +14,6 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
     ui->base->setCurrentIndex(0);
     ui->area_Trabajo->setVisible(false);
     ui->area_Trabajo->setCurrentIndex(0);
-
 
 }
 
@@ -65,6 +65,17 @@ void MainWindow::InicioProyecto(){
     this->Historial->setIcon(0,QIcon(":/new/prefix1/iconos/historial.png"));
 
     this->Proyecto->addChild(this->Historial);
+    ui->area_Trabajo->tabBar()->setTabVisible(4,false);
+
+        // tabla periodica
+
+    this->TablaPeriodica = new QTreeWidgetItem();
+    this->TablaPeriodica->setText(0,"Tabla Periodica");
+    this->TablaPeriodica->setIcon(0,QIcon(":/new/prefix1/iconos/tabla-periodica.png"));
+
+    this->Proyecto->addChild(this->TablaPeriodica);
+    ui->area_Trabajo->tabBar()->setTabVisible(5,false);
+
 
     ui->arbol->addTopLevelItem(this->Proyecto);
 
@@ -72,6 +83,26 @@ void MainWindow::InicioProyecto(){
     ui->base->setVisible(true);
     ui->base->setCurrentIndex(0);
     ui->area_Trabajo->setVisible(true);
+
+
+    for(int j=0;j<ui->tp->columnCount();j++){
+         ui->tp->setColumnWidth(j,50);
+    }
+
+    for(int i=0;i<ui->tp->rowCount();i++){
+        ui->tp->setRowHeight(i,50);
+    }
+
+}
+
+void MainWindow::LlenarTablaPeriodica(){
+    for(int i=0;i<ui->tp->rowCount();i++){
+        for(int j=0;j<ui->tp->columnCount();j++){
+            elemento *e = new elemento();
+
+            ui->tp->setCellWidget(i,j,e);
+        }
+    }
 }
 
 void MainWindow::on_actionAbrir_triggered(){
@@ -141,6 +172,12 @@ void MainWindow::on_arbol_itemDoubleClicked(QTreeWidgetItem *item, int column){
     else if(item == this->Historial){
         ui->area_Trabajo->setCurrentIndex(4);
          ui->area_Trabajo->tabBar()->setTabVisible(4,true);
+    }
+    else if(item == this->TablaPeriodica){
+        ui->area_Trabajo->setCurrentIndex(5);
+        ui->area_Trabajo->tabBar()->setTabVisible(5,true);
+
+        LlenarTablaPeriodica();
     }
 }
 

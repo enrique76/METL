@@ -9,17 +9,20 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    elemento.cpp \
     main.cpp \
     mainwindow.cpp \
     nuevo.cpp \
     unidades.cpp
 
 HEADERS += \
+    elemento.h \
     mainwindow.h \
     nuevo.h \
     unidades.h
 
 FORMS += \
+    elemento.ui \
     mainwindow.ui \
     nuevo.ui \
     unidades.ui

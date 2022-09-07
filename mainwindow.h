@@ -16,6 +16,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void InicioProyecto();
+    void LlenarTablaPeriodica();
 
 private slots:
     void on_actionAbrir_triggered();
@@ -43,6 +44,7 @@ private:
     QTreeWidgetItem *Unidades;
     QTreeWidgetItem *Historial;
     QTreeWidgetItem *Tablas;
+    QTreeWidgetItem *TablaPeriodica;
 
 };
 #endif // MAINWINDOW_H
